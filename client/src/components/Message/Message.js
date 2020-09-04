@@ -1,4 +1,5 @@
 import React from 'react';
+import './Message.css';
 
 
 
@@ -16,8 +17,8 @@ const Message = ({message: {user, text}, name}) =>{
         isSendByCurrentUser
         ?(
             <div>
-                <p>{trimmedName}</p>
-                <div>
+                <p className="pH">{trimmedName}</p>
+                <div className="admMsg">
                     <p>{text}</p>
                 </div>
             </div>
@@ -25,9 +26,9 @@ const Message = ({message: {user, text}, name}) =>{
         :
         (
             <div>
-                <p>{text}</p>
-                <div>
-                    <p>{user}</p>
+                <p className="admMsg">{text}</p>
+                <div className="userMsg">
+                    <p >{user}</p>
                 </div>
             </div>
         )

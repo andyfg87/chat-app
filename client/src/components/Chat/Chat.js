@@ -60,11 +60,11 @@ const Chat = ( { location }) => {
         
         <div>
             <InfoBar room={room}/>
-            <Container maxWidth="sm" maxHeight="sm">
+            <Container maxWidth="sm">
                 <Typography  component="div" style={{ backgroundColor: 'black', height: '64vh', width: '100vh' }}>
                    <Messages messages = {messages} name={name}/>  
                 </Typography >
-               
+              
                 <Input message={message} setMessage={setMessage} sendMessage={sendMessage}  />
             
             </Container>
