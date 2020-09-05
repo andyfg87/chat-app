@@ -15,17 +15,17 @@ const Message = ({message: {user, text}, name}) =>{
 
     return (
         isSendByCurrentUser
-        ?(
-            <div>
-                <p className="pH">{trimmedName}</p>
-                <div className="admMsg">
-                    <p>{text}</p>
+        ?(            
+            <div className="responsiveRecived">
+                <p className="admMsg">{text}</p>
+                <div className="userMsg">
+                    <p >{user}</p>
                 </div>
             </div>
         )
         :
         (
-            <div>
+            <div className="responsive">
                 <p className="admMsg">{text}</p>
                 <div className="userMsg">
                     <p >{user}</p>

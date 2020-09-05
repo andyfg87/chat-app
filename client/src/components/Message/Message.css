@@ -9,11 +9,23 @@
     border-radius: 14px;
 }
 
+.responsive{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.responsiveRecived{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
 .admMsg{
     color: aliceblue;
     background-color: blueviolet;
-    margin-left: 12px;
-    margin-right: 262px;
+    margin-left: 9px;
+    margin-right: 9px;
     border-radius: 4px;   
     font-family: cursive;
     font-size: 20px;
@@ -21,12 +33,22 @@
     padding-right: 29px;
 }
 
+.admMsgu{
+    background-color: blueviolet;
+    color: antiquewhite;
+    font-family: cursive;
+    font-size: 20px;
+    display: flex;
+    border-radius: 6px;
+    flex-wrap: wrap;
+}
+
 .userMsg{
     color: chartreuse;
     font-size: 13px;
     margin-right: auto;
     margin-left: 580px;
-    margin-top: -21px;
+    margin-top: -54px;
 }
 
 .pH{
