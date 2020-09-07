@@ -9,6 +9,7 @@ const router = require('./router');
 
 
 const app = express();
+app.use(express.static('client/build'));
 const server = http.createServer(app);
 const io = socketio(server);
 
@@ -49,5 +50,6 @@ io.on('connection', (socket) => {
 });
 
 app.use(router);
+
 
 server.listen(PORT, ()=> console.log(`Server has started on port ${PORT}`));
