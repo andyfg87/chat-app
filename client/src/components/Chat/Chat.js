@@ -56,6 +56,7 @@ const Chat = ( { location }) => {
     }
  
     console.log(message, messages);
+    console.log(window.screen.availWidth+"x"+window.screen.availHeight);
     return(
         
         <div>

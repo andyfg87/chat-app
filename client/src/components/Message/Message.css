@@ -57,3 +57,13 @@
     margin-right: 9px;
     margin-left: auto;
 }
+
+@media (min-width: 1367px) and (max-width: 1920px){
+    .userMsg {
+        color: chartreuse;
+        font-size: 13px;
+        margin-right: auto;
+        margin-left: 891px;
+        margin-top: -32px;
+    }
+}
