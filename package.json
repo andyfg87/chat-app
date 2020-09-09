@@ -18,12 +18,14 @@
     "socket.io-client": "^2.3.0"
   },
   "scripts": {
+    "dev":"npm run client & npm run server",
     "start": "concurrently \" npm run build\" \"npm run server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "client": "react-scripts start",
-    "server": "cd server && npm start"
+    "server": "npm start --prefix server"
+   
   },
   "eslintConfig": {
     "extends": "react-app"
